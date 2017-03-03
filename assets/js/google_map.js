@@ -11,17 +11,19 @@
     google.maps.event.addDomListener(window, 'load', init);
 
     var map;
-    var zoomLevel = 11;
+    var zoomLevel = 14;
 
     function init() {
         // Basic options for a simple Google Map
         // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+        var myLatlng = new google.maps.LatLng(27.879086, -82.786771);
         var mapOptions = {
             // How zoomed in you want the map to start at (always required)
             zoom: zoomLevel,
             disableDefaultUI: true,
             // The latitude and longitude to center the map (always required)
-            center: new google.maps.LatLng(27.879086, -82.786771), // Strategic
+            center: myLatlng, // Strategic
+            draggable: true,
             scrollwheel: false,
             // Map styling
             styles: [{
@@ -143,6 +145,11 @@
 
         // Create the Google Map using out element and options defined above
         map = new google.maps.Map(mapElement, mapOptions);
+
+        var marker = new google.maps.Marker({
+            position: myLatlng
+        });
+        marker.setMap(map);
     }
 
 })(window.jQuery);
