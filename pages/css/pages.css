@@ -1720,13 +1720,13 @@ h6.block {
 */
 a {
   text-shadow: none !important;
-  color: #3a8fc8;
+  color: #2c2c2c;
   transition: color 0.1s linear 0s, background-color 0.1s linear 0s, opacity 0.2s linear 0s !important;
 }
 a:focus,
 a:hover,
 a:active {
-  color: #48b0f7;
+  color: #2c2c2c;
 }
 a,
 a:focus,
@@ -1898,6 +1898,14 @@ hr.dotted {
 .bg-master-lighter {
   background-color: #f0f0f0;
 }
+.bg-master-crashapp {
+  background-color: #0b131c;
+}
+
+.bg-master-trumpedup {
+  background-color: #e31837;
+}
+
 .bg-master-lightest {
   background-color: #fafafa;
 }
