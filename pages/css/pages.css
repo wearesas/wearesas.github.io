@@ -7906,7 +7906,7 @@ sup.dollar {
   .header.light-solid .menu-content.mobile-dark a:not(.btn),
   .header.transparent-dark .menu-content.mobile-dark a:not(.btn),
   .header.transparent-light .menu-content.mobile-dark a:not(.btn) {
-    color: #788195 !important;
+    color: #e2e2e2 !important;
   }
   .header.dark .menu-content.mobile-dark a:not(.btn):hover,
   .header.light .menu-content.mobile-dark a:not(.btn):hover,
@@ -7982,7 +7982,7 @@ sup.dollar {
   .header.light-solid .menu-content.mobile-dark.mobile-dark .menu > li > a:not(.btn).active,
   .header.transparent-dark .menu-content.mobile-dark.mobile-dark .menu > li > a:not(.btn).active,
   .header.transparent-light .menu-content.mobile-dark.mobile-dark .menu > li > a:not(.btn).active {
-    background-color: #272b35;
+    background-color: #272727;
     color: #fff ;
   }
   .header .menu > li > a:before,
@@ -8001,7 +8001,7 @@ sup.dollar {
     background-color: #f0f0f0;
   }
   .menu-content.mobile-dark {
-    background-color: #2b303b !important;
+    background-color: #2c2c2c !important;
   }
   .menu-content.mobile-dark .menu > li.classic > nav ul,
   .menu-content.mobile-dark .menu > li.horizontal > nav,
