@@ -1,0 +1,497 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <!-- Site Title -->
+  <title>CrashApp | Strategic App Solutions, LLC</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="CrashApp Description" />
+  <meta name="keywords" content="CrashApp, Accident, Reporting, Lawyer, Accident Reporting" />
+  <meta name="author" content="Kartik Solanki" />
+
+  <!-- Mobile Specific Meta Tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <!-- Favicon Icon -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Theme Stylesheet -->
+  <link href="css/style.css" rel="stylesheet" media="screen">
+
+  <!-- Preloader (Pace.js) -->
+  <script src="js/plugins/pace.min.js"></script>
+
+  <!-- Modernizr -->
+  <script src="js/libs/modernizr.custom.js"></script>
+  <script src="js/libs/detectizr.min.js"></script>
+
+</head>
+
+<!-- Body -->
+<!-- Remove '.fixed-footer' from body to disable fixed footer reveal on scroll -->
+
+<body class="fixed-footer">
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="logo">
+      <img src="img/logo-middle.png" alt="CrashApp">
+      <span>CrashApp</span>
+    </div>
+  </div>
+
+  <!--Modal (Signin/Signup Page)-->
+  <div class="modal fade" id="signin-page">
+    <div class="modal-dialog">
+      <div class="container">
+        <div class="modal-form">
+          <div class="tab-content">
+            <!-- Sign in form -->
+            <form class="tab-pane transition scale fade in active" id="signin-form" autocomplete="off">
+              <h3 class="modal-title">Sign in to web portal</h3>
+              <div class="form-group space-top-2x">
+                <label for="si_email" class="sr-only">Attorney Email</label>
+                <input type="email" class="form-control" name="si_email" id="si_email" placeholder="Email" readonly onfocus="$(this).removeAttr('readonly');"
+                  required>
+                <span class="error-label"></span>
+                <span class="valid-label"></span>
+              </div>
+              <div class="form-group">
+                <label for="si-password" class="sr-only">Password</label>
+                <input type="password" class="form-control" name="si-password" id="si-password" placeholder="Password" readonly onfocus="$(this).removeAttr('readonly');"
+                  required>
+                <span class="error-label"></span>
+                <span class="valid-label"></span>
+              </div>
+              <label class="checkbox">
+                  <input type="checkbox"> Remember me
+                </label>
+              <div class="space-top-2x clearfix">
+                <button type="button" class="btn-round btn-ghost btn-danger pull-left" data-dismiss="modal"><i class="flaticon-cross37"></i></button>
+                <button type="submit" class="btn-round btn-ghost btn-success pull-right"><i class="flaticon-correct7"></i></button>
+              </div>
+              <!-- Switching forms (Fake nav tab) -->
+              <div class="form-switch helper-text space-top-2x" style="text-align: center">Forgot Password? Mail us on: crashapp@wearesas.com</div>
+            </form>
+            <!-- Sign up form -->
+            <form class="tab-pane transition scale fade" id="signup-form">
+              <h3 class="modal-title">Sign Up</h3>
+              <div class="form-group space-top-2x">
+                <label for="su-email" class="sr-only">Email</label>
+                <input type="email" class="form-control" name="su-email" id="su-email" placeholder="Email" required>
+                <span class="error-label"></span>
+                <span class="valid-label"></span>
+              </div>
+              <div class="form-group">
+                <label for="su-password" class="sr-only">Password</label>
+                <input type="password" class="form-control" name="su-password" id="su-password" placeholder="Password" required>
+                <span class="error-label"></span>
+                <span class="valid-label"></span>
+              </div>
+              <div class="form-group">
+                <label for="su-password-repeat" class="sr-only">Repeat password</label>
+                <input type="password" class="form-control" name="su-password-repeat" id="su-password-repeat" placeholder="Repeat password"
+                  required>
+                <span class="error-label"></span>
+                <span class="valid-label"></span>
+              </div>
+              <label class="checkbox">
+                  <input type="checkbox"> Subscribe for our news
+                </label>
+              <div class="space-top-2x clearfix">
+                <button type="button" class="btn-round btn-ghost btn-danger pull-left" data-dismiss="modal"><i class="flaticon-cross37"></i></button>
+                <button type="submit" class="btn-round btn-ghost btn-success pull-right"><i class="flaticon-correct7"></i></button>
+              </div>
+              <!-- Switching forms (Fake nav tab) -->
+              <div class="form-switch helper-text space-top-2x">Already have an account? <a href="#form-2">Sign in</a></div>
+            </form>
+          </div>
+          <!-- Hidden real nav tabs -->
+          <ul class="nav-tabs hidden">
+            <li id="form-1"><a href="#signup-form" data-toggle="tab">Sign up</a></li>
+            <li id="form-2"><a href="#signin-form" data-toggle="tab">Sign in</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal -->
+
+  <!-- Intro Section -->
+  <section class="intro" style="background-image: url(img/intro/intro-bg.jpg);">
+    <div class="gradient"></div>
+    <div class="container">
+      <div class="column-wrap">
+
+        <!-- Left Column -->
+        <div class="column c-left">
+          <!-- Social Buttons -->
+          <div class="social-buttons">
+            <a href="https://www.facebook.com/mycrashapp/" target="_blank" class="sb-facebook"><i class="bi-facebook"></i></a>
+            <a href="#" class="sb-twitter"><i class="bi-twitter"></i></a>
+          </div>
+
+          <!-- Scroll for More Button -->
+          <a href="#features" class="scroll-more scroll" data-offset-top="80">
+            <i class="icon"></i>
+          </a>
+        </div>
+
+        <!-- Middle Column-->
+        <div class="column c-middle">
+          <h1 class="logo" style="line-height:1">
+            <img src="img/logo-big.png" alt="CrashApp"> CrashApp
+            <span><i>Bridging the Gap between Attorney & their Clients</i></span>
+          </h1>
+          <div class="phone">
+            <img src="img/intro/screen.png" alt="App Screen">
+          </div>
+        </div>
+
+        <!-- Right Column-->
+        <div class="column c-right">
+          <!-- Navi -->
+          <div class="navi">
+            <a href="#" data-toggle="modal" data-target="#signin-page" data-modal-form="sign-in">Attorney Log In</a>
+          </div>
+          <!-- Features -->
+          <div class="intro-features">
+            <div class="icon-block icon-block-horizontal light-color" data-transition-delay="100">
+              <div class="icon"><i class="pe-7s-timer"></i></div>
+              <div class="text">
+                <h3>Swift Crash Reporting</h3>
+                <p>Report an Accident with all the necessary details in 4 easy steps</p>
+              </div>
+            </div>
+            <div class="icon-block icon-block-horizontal light-color" data-transition-delay="300">
+              <div class="icon"><i class="pe-7s-phone"></i></div>
+              <div class="text">
+                <h3>Intuitive User Interface</h3>
+                <p>Easy and intuitive user interface designed for your crash needs</p>
+              </div>
+            </div>
+            <div class="icon-block icon-block-horizontal light-color" data-transition-delay="500">
+              <div class="icon"><i class="pe-7s-notebook"></i></div>
+              <div class="text">
+                <h3>App Guide for Routing</h3>
+                <p>Application guide for routing and navigation throughout the interface</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Intro Section End -->
+
+  <!-- Content Wrap -->
+  <div class="content-wrap">
+    <!-- Navbar -->
+    <!-- Add '.navbar-sticky' to make navbar stuck to top on document scroll -->
+    <header class="navbar gray navbar-sticky">
+      <div class="container">
+        <!-- Logo -->
+        <a href="#" class="logo scrollup">
+          <img src="img/logo-small.png" alt="CrashApp"> CrashApp
+        </a>
+        <!-- Toolbar -->
+        <div class="toolbar">
+          <a href="https://itunes.apple.com/us/app/crashapp-sas/id1144747080?mt=8" target="_blank" class="btn btn-ghost btn-primary icon-left"><i class="bi-apple"></i> iOS</a>
+          <a href="https://play.google.com/store/apps/details?id=com.CrashAppRelease" target="_blank" class="btn btn-ghost btn-primary icon-left"><i class="bi-android"></i> Android</a>
+          <a href="#" class="btn btn-ghost btn-primary" data-toggle="modal" data-target="#signin-page" data-modal-form="sign-in" class="action-btn"> Attorney Log In</a>
+        </div>
+      </div>
+    </header>
+    <!-- Navbar End -->
+
+    <!-- Feature Tabs -->
+    <section class="fw-bg bg-align-bottom feature-tabs" style="background-image: url(img/features/bg1.jpg);" id="features">
+      <!-- Heading when columns stack -->
+      <div class="block-heading light-color visible-when-stack">
+        <h2>Reporting An Accident</h2>
+        <span>Look what this app has to offer</span>
+      </div>
+      <div class="clearfix">
+        <!-- Devices -->
+        <div class="devices">
+          <div class="tablet">
+            <img src="img/features/ipad1.png" alt="iPad">
+            <div class="mask">
+              <ul class="screens">
+                <img src="img/features/tablet/screen.png" alt="Screen 01">
+              </ul>
+            </div>
+          </div>
+          <div class="phone">
+            <img src="img/features/iphone.png" alt="iPhone">
+            <div class="mask">
+              <ul class="screens">
+                <li class="active in" id="ps01"><img src="img/features/phone/screen1.png" alt="Screen 01"></li>
+                <li id="ps02"><img src="img/features/phone/screen2.png" alt="Screen 02"></li>
+                <li id="ps03"><img src="img/features/phone/screen3.png" alt="Screen 03"></li>
+                <li id="ps04"><img src="img/features/phone/screen4.png" alt="Screen 04"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Tabs -->
+        <div class="tabs light-color text-center">
+          <div class="block-heading hidden-when-stack">
+            <h2>Accident Checklist</h2>
+            <span>Look what this app has to offer</span>
+          </div>
+          <!-- Nav Tabs -->
+          <!-- Remove data-autoswitch="true" to disable automatic tabs change. -->
+          <ul class="nav-tabs" data-autoswitch="true" data-interval="5000">
+            <li class="active"><a href="#video-player" data-toggle="tab" data-tablet="#ts01" data-phone="#ps01"><i class="flaticon-photo31"></i></a></li>
+            <li><a href="#settings" data-toggle="tab" data-tablet="#ts02" data-phone="#ps02"><i class="pe-7s-map-2"></i></a></li>
+            <li><a href="#file-sharing" data-toggle="tab" data-tablet="#ts03" data-phone="#ps03"><i class="pe-7s-add-user"></i></a></li>
+            <li><a href="#chat" data-toggle="tab" data-tablet="#ts04" data-phone="#ps04"><i class="pe-7s-news-paper"></i></a></li>
+          </ul>
+          <!-- Tab panes -->
+          <!-- Use different transitions: 'scale', 'scaleup', 'top', 'bottom', 'left', 'right' and 'flip' -->
+          <div class="tab-content">
+            <div class="tab-pane transition scale fade in active" id="video-player">
+              <h3>Take Photos</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos iste distinctio sed architecto rem sapiente atque
+                itaque soluta quisquam at ex praesentium sed exercitationem.</p>
+            </div>
+            <div class="tab-pane transition scale fade" id="settings">
+              <h3>Report Location</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos iste distinctio sed architecto rem sapiente atque
+                itaque soluta quisquam at ex praesentium sed exercitationem.</p>
+            </div>
+            <div class="tab-pane transition scale fade" id="file-sharing">
+              <h3>Add Witnesses</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos iste distinctio sed architecto rem sapiente atque
+                itaque soluta quisquam at ex praesentium sed exercitationem.</p>
+            </div>
+            <div class="tab-pane transition scale fade" id="chat">
+              <h3>Add Insurance Details</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos iste distinctio sed architecto rem sapiente atque
+                itaque soluta quisquam at ex praesentium sed exercitationem.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Feature Tabs End -->
+
+    <!-- App Features (Icon + Text + Link) -->
+    <section class="fw-bg fw-blue-bg padding-bottom-2x">
+      <!--<section class="fw-bg overlay gradient-dark padding-bottom-2x" style="background-image: url(img/space.jpg);">-->
+      <div class="container light-color">
+        <!-- Badge -->
+        <div class="badge badge-reverse">
+          No other app has these additional features
+          <span class="icon"><i class="flaticon-star51"></i></span>
+        </div>
+        <!-- Content -->
+        <div class="row">
+          <div class="col-lg-10 col-lg-offset-1">
+            <div class="row">
+              <div class="col-sm-6">
+                <!-- Icon block are very flexible. If you remove '.icon-block-horizontal' you'll get stacked version. There is als modofier classes for icon like '.icon-bigger', '.va-middle' for vertical alignment. -->
+                <div class="icon-block icon-block-horizontal">
+                  <div class="icon icon-bigger va-middle"><i class="pe-7s-graph1"></i></div>
+                  <div class="text">
+                    <h3>Dashboard</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit quas harum a aperiam.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="icon-block icon-block-horizontal">
+                  <div class="icon icon-bigger va-middle"><i class="flaticon-round27"></i></div>
+                  <div class="text">
+                    <h3>Accident History</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit quas harum a aperiam.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="icon-block icon-block-horizontal">
+                  <div class="icon icon-bigger va-middle"><i class="pe-7s-id"></i></div>
+                  <div class="text">
+                    <h3>My Profile</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit quas harum a aperiam.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="icon-block icon-block-horizontal">
+                  <div class="icon icon-bigger va-middle"><i class="pe-7s-users"></i></div>
+                  <div class="text">
+                    <h3>Emergency Contacts</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit quas harum a aperiam.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- App Features End -->
+
+    <!-- Video Block -->
+    <section class="fw-bg bg-align-bottom video-block" style="background-image: url(img/video-bg.jpg);" id="video">
+      <div class="container">
+        <a class="video-popup" href="img/crashapp_promo.mp4">
+          <i class="flaticon-play33" style="color: #385a7d"></i> Watch Promo
+        </a>
+      </div>
+    </section>
+    <!-- App Story End -->
+
+    <!-- Horizontal Tabs -->
+    <section class="padding-top-3x space-bottom-3x" id="figures">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="block-heading text-right">
+              <h2>Immediate Crash Assistance</h2>
+              <span>bridging the gap between attorney and their serving clients</span>
+            </div>
+            <div class="row space-bottom">
+              <div class="col-lg-8 col-md-10 col-lg-offset-4 col-md-offset-2">
+                <p class="text-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                  commodo consequat.</p>
+              </div>
+            </div>
+            <!-- Nav tabs -->
+            <ul class="nav-tabs text-right">
+              <li class="active"><a href="#speed" data-toggle="tab">Accident Reporting Time</a></li>
+              <li><a href="#downloads" data-toggle="tab">Downloads</a></li>
+              <li><a href="#share" data-toggle="tab">Market Share</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6">
+            <!-- Tab panes -->
+            <!-- Use different transitions: 'scale', 'scaleup', 'top', 'bottom', 'left', 'right' and 'flip' -->
+            <div class="tab-content">
+              <div class="tab-pane transition scale fade in active" id="speed">
+                <img src="img/graphs/speed.png" alt="Loading Speed">
+              </div>
+              <div class="tab-pane transition right fade" id="downloads">
+                <img src="img/graphs/downloads.png" alt="Downloads">
+              </div>
+              <div class="tab-pane transition flip fade" id="share">
+                <img src="img/graphs/share.png" alt="Market Share">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Horizontal Tabs End -->
+
+    <!-- Web Application -->
+    <section class="fw-bg fw-dark-gray-bg padding-top-3x padding-bottom-2x" id="web-app">
+      <div class="container ">
+        <div class="row ">
+          <div class="col-md-6">
+            <div class="block-heading">
+              <h2>Web Portal for Attorney</h2>
+              <span>User data right in your browser</span>
+            </div>
+            <div class="icon-block icon-block-horizontal">
+              <div class="icon hidden-xs"><i class="flaticon-globe14"></i></div>
+              <div class="text">
+                <h3>Accidents, Users & Push Notification</h3>
+                <p>We have developed a web portal for attorney that connects the application to the portal interface. The portal
+                  contains the data for reported accidents, registered users and push notification.</p>
+                <a href="#" style="color: #8e8e93" class="link" data-toggle="modal" data-target="#signin-page" data-modal-form="sign-in">Log In to Attorney Portal</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img src="img/features/tablet/screen.png" alt="Web App">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Web Application End -->
+
+    <!-- App Story (Prototyping) -->
+    <!-- 2 required modifier classe available '.img-left' and '.img-right'-->
+    <section class="fw-bg fw-blue-bg split-block img-left light-color" id="app-story">
+      <div class="column">
+        <img src="img/prototype.png" alt="Prototyping">
+      </div>
+      <div class="column">
+        <div class="block-heading">
+          <h2>Proposing a solution</h2>
+          <span>Our story of how it started</span>
+        </div>
+        <p style="font-size: 14px">The key objective was to make CrashApp more accessible to an attorney clients. To achieve that goal, we start with
+          wireframing. Our designers put their heads together to create the most intuitive and logical blueprint for the
+          app to avoid flow changes in the coding stage.</p>
+        <p style="font-size: 14px">Wireframing was crucial because it allowed mapping out the flow and fixing potential issues. Based on the wireframe,
+          our team of developers created a beautiful and efficient minimum viable product. The goal here is to focus on the
+          basic features to release the app as soon as possible. This allows us to start gaining user and internal feedback.</p>
+      </div>
+
+  </div>
+  <!-- Content Wrap End -->
+
+  <!-- Footer -->
+  <footer class="footer padding-top-3x">
+    <div class="container space-top">
+      <!-- Footer Head -->
+      <div class="footer-head">
+        <div class="logo">
+          <a href="#" class="srollup"><img src="img/logo-big.png" alt="CrashApp"></a>
+        </div>
+        <div class="info">
+          <h2>CrashApp</h2>
+          <p>Powered by: Strategic App Solutions, LLC</p>
+          <a href="https://itunes.apple.com/us/app/crashapp-sas/id1144747080?mt=8" target="_blank" class="btn btn-ghost btn-primary btn-sm icon-left"><i class="bi-apple"></i> Apple Store</a>
+          <a href="https://play.google.com/store/apps/details?id=com.CrashAppRelease" target="_blank" class="btn btn-ghost btn-primary btn-sm icon-left"><i class="bi-android"></i> Play Store</a>
+        </div>
+      </div>
+      <div class="body padding-top-2x">
+        <!-- Copyright -->
+        <div class="column copyright">
+          <p>2017 &copy; <a href="http://www.wearesas.com/" target="_blank">Strategic App Solutions, LLC</a></p>
+        </div>
+        <!-- Gadget (Middle Column) -->
+        <div class="column hidden-sm hidden-xs">
+          <div class="gadget">
+            <!--<img src="img/footer/screen.png" alt="Screen">-->
+          </div>
+        </div>
+        <nav class="column footer-nav">
+          <ul>
+            <li><a href="legal.html">Terms of Use | </a><a href="#">Privacy Policy</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer End -->
+
+  <!-- Javascript (jQuery) Libraries and Plugins -->
+  <script src="js/libs/jquery-2.1.3.min.js"></script>
+  <script src="js/libs/jquery.easing.1.3.js"></script>
+  <script src="js/plugins/velocity.min.js"></script>
+  <script src="js/plugins/bootstrap.min.js"></script>
+  <script src="js/plugins/smoothscroll.js"></script>
+  <script src="js/plugins/jquery.waypoints.min.js"></script>
+  <script src="js/plugins/form-plugins.js"></script>
+  <script src="js/plugins/jquery.magnific-popup.min.js"></script>
+  <script src="js/plugins/jquery.mCustomScrollbar.min.js"></script>
+  <script src="js/scripts.js"></script>
+
+</body>
+<!-- Body End-->
+
+</html>
