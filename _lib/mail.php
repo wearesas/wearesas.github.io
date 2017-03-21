@@ -21,11 +21,11 @@
     $mail->isSMTP();                                    // Enable SMTP authentication
     $mail->SMTPAuth = true;                             // Set mailer to use SMTP
     //Sign up with MAIL GUN
-    $mail->Host = 'smtp.mailgun.org';                // Specify main and backup server (this is a fake name for the use of this example)             
+    $mail->Host = 'localhost';                // Specify main and backup server (this is a fake name for the use of this example)             
 
     $mail->Username = 'kartik@wearesas.com';                  // SMTP username
     $mail->Password = '@Aldoredo7';                         // SMTP password
-    $mail->SMTPSecure = 'tls';                          // Enable encryption, 'ssl' also accepted                                   
+    $mail->SMTPSecure = 'ssl';                          // Enable encryption, 'ssl' also accepted                                   
     $mail->Port = 587;                        
 
     $mail->From = $email;
