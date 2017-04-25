@@ -25,7 +25,7 @@
 
     $mail->Username = 'strategicappsol@gmail.com';                  // SMTP username
     $mail->Password = 'crashapp15';                         // SMTP password
-    $mail->SMTPSecure = 'ssl';                          // Enable encryption, 'ssl' also accepted                                   
+    // $mail->SMTPSecure = 'ssl';                          // Enable encryption, 'ssl' also accepted                                   
     $mail->Port = 587;                        
 
     $mail->From = $email;
