@@ -21,22 +21,22 @@
     $mail->isSMTP();                                    // Enable SMTP authentication
     $mail->SMTPAuth = true;                             // Set mailer to use SMTP
     //Sign up with MAIL GUN
-    $mail->Host = 'localhost';                // Specify main and backup server (this is a fake name for the use of this example)             
+    $mail->Host = 'smtp.gmail.com';                // Specify main and backup server (this is a fake name for the use of this example)             
 
-    $mail->Username = 'kartik@wearesas.com';                  // SMTP username
-    $mail->Password = '@Aldoredo7';                         // SMTP password
+    $mail->Username = 'strategicappsol@gmail.com';                  // SMTP username
+    $mail->Password = 'crashapp15';                         // SMTP password
     $mail->SMTPSecure = 'ssl';                          // Enable encryption, 'ssl' also accepted                                   
     $mail->Port = 587;                        
 
     $mail->From = $email;
     $mail->FromName = $name;
     $mail->AddReplyTo($email,$name);
-    $mail->addAddress('support@myemail.com', $name);  // Add a recipient
+    $mail->addAddress('info@wearesas.com', 'information');  // Add a recipient
 
     $mail->WordWrap = 50;                               // Set word wrap to 50 characters
     $mail->isHTML(true);                                // Set email format to HTML
 
-    $mail->Subject = 'Contact request';
+    $mail->Subject = 'Contact us request';
     $mail->Body    = $message;
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
