@@ -1,7 +1,7 @@
 <?php 
 
     require '../_lib/phpmailer/PHPMailerAutoload.php';
- 
+    echo "hello";
     // CONFIG YOUR FIELDS
     //============================================================
     $name =     filter_var($_POST["name"], FILTER_SANITIZE_STRING);
